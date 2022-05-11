@@ -11,13 +11,6 @@ defineProps<{
 	}
 }>()
 
-const navigate = () => {
-	Inertia.post('/test', {}, {
-		onFinish: visit => {
-			console.count('onFinish');
-		}
-	})
-}
 </script>
 
 <template layout>
@@ -29,7 +22,7 @@ const navigate = () => {
 			</div>
 
 			<div class="flex justify-center mt-4 items-center">
-				<button @click="navigate">This does the onfinish thing</button>
+				<p>And we're on the next page :)</p>
 			</div>
 		</div>
 	</div>

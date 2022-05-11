@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return inertia('welcome');
 });
+
+Route::post('/test', function () {
+    sleep(5);
+
+    return redirect('/test2');
+});
+
+Route::get('/test2', function () {
+    return inertia('goodbye');
+});
